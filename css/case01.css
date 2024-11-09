@@ -1,38 +1,50 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-    text-align: center;
-    color: lightcoral;
-    font-size: 2.5rem;
-    font-weight: 500;
     margin: 0;
-}
-
-.container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(233, 233, 233);
 }
-
-.card {
-    width: 150px;
-    height: 100px;
-    background: url("/assets/images/image2.gif") no-repeat center/cover;
-    color: #121212;
-    padding: 8px;
-    font-size: 1.1rem;
-    font-weight: 550;
-    border-bottom: 2px solid #aaa;
+  
+.container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
 }
-
-.image {
-    background: url("/assets/images/home.gif") no-repeat center/cover;
-    width: 200px;
-    height: 120px;
+  
+.employee-container {
+    width: 80%;
+    height: 100%;
+    border-bottom: 4px solid rgb(175, 175, 175);
+    display: flex;
+    flex-direction: row;
 }
-
-
+  
+.office {
+    background-image: url(/assets/images/home.gif);
+    background-size: cover;
+    width: 20%;
+    height: 100%;
+}
+  
+.employee {
+    background-image: url(/assets/images/employee.gif);
+    background-size: cover;
+    width: calc(100% / 6);
+    height: 100%;
+}
+  
+.sign {
+    position: relative;
+    top: 0px;
+    left: calc(100% - 20px);
+    color: cyan;
+    font-family: monospace;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+  
